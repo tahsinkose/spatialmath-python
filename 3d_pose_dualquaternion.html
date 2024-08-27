@@ -201,14 +201,14 @@ the rigid-body motion described by the SE3 value <code class="docutils literal n
 <div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">spatialmath</span> <span class="kn">import</span> <span class="n">UnitDualQuaternion</span><span class="p">,</span> <span class="n">SE3</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">T</span> <span class="o">=</span> <span class="n">SE3</span><span class="o">.</span><span class="n">Rand</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">T</span><span class="p">)</span>
-<span class="go">  -0.4364    0.5227   -0.7323    0.8466    </span>
-<span class="go">   0.131    -0.7684   -0.6265    0.2578    </span>
-<span class="go">  -0.8901   -0.3693    0.2669    0.2008    </span>
+<span class="go">  -0.9601   -0.1235    0.2509   -0.8682    </span>
+<span class="go">  -0.2616    0.07948  -0.9619   -0.2962    </span>
+<span class="go">   0.09885  -0.9892   -0.1086    0.9552    </span>
 <span class="go">   0         0         0         1         </span>
 
 <span class="gp">&gt;&gt;&gt; </span><span class="n">d</span> <span class="o">=</span> <span class="n">UnitDualQuaternion</span><span class="p">(</span><span class="n">T</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">d</span><span class="p">)</span>
-<span class="go">-0.1246 &lt;&lt; -0.5160, -0.3167,  0.7861 &gt;&gt; + ε  0.1803 &lt;  0.0804, -0.4006, -0.0801 &gt;</span>
+<span class="go"> 0.0519 &lt;&lt; -0.1314,  0.7328, -0.6656 &gt;&gt; + ε  0.3694 &lt; -0.2739, -0.3594, -0.3128 &gt;</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="nb">type</span><span class="p">(</span><span class="n">d</span><span class="p">)</span>
 <span class="go">&lt;class &#39;spatialmath.DualQuaternion.UnitDualQuaternion&#39;&gt;</span>
 </pre></div>
@@ -352,7 +352,7 @@ number (1,0).</p>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="spatialmath.DualQuaternion.UnitDualQuaternion.vec">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">vec</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v2.0)"><span class="pre">numpy.ndarray</span></a><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.dtype.html#numpy.dtype" title="(in NumPy v2.0)"><span class="pre">numpy.dtype</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://numpy.org/doc/stable/reference/arrays.scalars.html#numpy.floating" title="(in NumPy v2.0)"><span class="pre">numpy.floating</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#spatialmath.DualQuaternion.UnitDualQuaternion.vec" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">vec</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v2.1)"><span class="pre">numpy.ndarray</span></a><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.dtype.html#numpy.dtype" title="(in NumPy v2.1)"><span class="pre">numpy.dtype</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://numpy.org/doc/stable/reference/arrays.scalars.html#numpy.floating" title="(in NumPy v2.1)"><span class="pre">numpy.floating</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#spatialmath.DualQuaternion.UnitDualQuaternion.vec" title="Permalink to this definition"></a></dt>
 <dd><p>Dual quaternion as a vector</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
@@ -387,7 +387,7 @@ number (1,0).</p>
 
   <div role="contentinfo">
     <p>&#169; Copyright 2020-, Peter Corke..
-      <span class="lastupdated">Last updated on 01-Aug-2024.
+      <span class="lastupdated">Last updated on 27-Aug-2024.
       </span></p>
   </div>
 
